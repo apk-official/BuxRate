@@ -1,0 +1,130 @@
+@media screen and (max-width: 1200px) {
+  .curr-conv-container {
+    width: 1000px;
+  }
+  .currency-amount,
+  .currency-select {
+    gap: 20px;
+  }
+  .to-currency,
+  .from-currency,
+  .amount-input {
+    width: 270px;
+  }
+  .currency {
+    width: 180px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .curr-conv-container {
+    width: 850px;
+    padding: 28px 40px;
+    height: 390px;
+  }
+  .currency-amount {
+    flex-direction: column;
+  }
+  .conv-to {
+    margin-bottom: 20px;
+    font-size: 32px;
+  }
+  .converted-amount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 900px) {
+  .curr-conv-container {
+    width: 700px;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+  .curr-conv-container {
+    width: 500px;
+    height: 560px;
+  }
+  .currency-select {
+    flex-direction: column;
+  }
+  .arrow-icon {
+    rotate: 90deg;
+  }
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 32px;
+    max-width: 330px;
+  }
+  .curr-conv-container {
+    width: 400px;
+    height: 500px;
+    padding: 28px 20px;
+    justify-content: center;
+  }
+  .hero-para {
+    max-width: 300px;
+    text-align: center;
+  }
+  .logo {
+    font-size: 20px;
+  }
+  .to-currency,
+  .from-currency,
+  .amount-input,
+  .currency {
+    height: 54px;
+    border-radius: 16px;
+  }
+  .currency {
+    padding: 10px;
+    background-position-y: 10px;
+  }
+  .switch {
+    height: 48px;
+    width: 48px;
+    border-radius: 16px;
+  }
+  .nav-bar {
+    width: 380px;
+    padding: 8px 24px;
+  }
+  .flag {
+    height: 32px;
+  }
+  .conv-to {
+    text-align: center;
+    font-size: 24px;
+  }
+  .conv-from {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .curr-conv-container {
+    width: 320px;
+    min-height: 480px;
+    padding: 28px 20px;
+  }
+
+  .nav-bar {
+    width: 320px;
+    padding: 8px 0px;
+  }
+  .arrow-icon {
+    rotate: 90deg;
+  }
+  .conv-to {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .app {
+    max-width: 100vh;
+  }
+}

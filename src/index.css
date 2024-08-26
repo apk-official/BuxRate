@@ -1,13 +1,169 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+body {
+  min-height: 100vh;
+  background-color: #f2e8cf;
+}
+.app {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #f2e8cf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav-bar {
+  width: 100vw;
+  height: 50px;
+  /* border: 2px solid #222222; */
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 24px;
+}
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+}
+.github-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 20px;
+  outline: none;
+  border: 2px solid #222222;
+  background-color: #c7ef00;
+  font-size: 16px;
+  color: #222222;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.github-btn:hover {
+  background-color: #dbfe2c;
+}
+h1 {
+  font-size: 48px;
+  max-width: 480px;
+  text-align: center;
+  font-weight: 500;
+}
+.hero-para {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.curr-conv-container {
+  height: 340px;
+  width: 1222px;
+  border: 2px solid #222222;
+  border-radius: 40px;
+  padding: 48px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.currency-amount,
+.converted-amount {
+  width: 100%;
+}
+.currency-amount {
+  margin-bottom: 36px;
+}
+.currency-amount,
+.currency-select {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+}
+.amount-input {
+  width: 300px;
+  height: 70px;
+  border-radius: 20px;
+  outline: none;
+  border: 2px solid #222222;
+  padding: 20px;
+  font-size: 20px;
+}
+.to-currency,
+.from-currency {
+  width: 300px;
+  height: 70px;
+  border: 2px solid #222222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #fbfbfb;
+  /* padding: 20px; */
+}
+.currency {
+  width: 200px;
+  height: 70px;
+  outline: none;
+  border: none;
+  padding: 20px;
+  font-size: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iIzQwMjYyNiIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik0yMTMuNjYsMTAxLjY2bC04MCw4MGE4LDgsMCwwLDEtMTEuMzIsMGwtODAtODBBOCw4LDAsMCwxLDUzLjY2LDkwLjM0TDEyOCwxNjQuNjlsNzQuMzQtNzQuMzVhOCw4LDAsMCwxLDExLjMyLDExLjMyWiI+PC9wYXRoPjwvc3ZnPg==");
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 16px;
+}
+.switch {
+  width: 70px;
+  height: 70px;
+  background-color: #c7ef00;
+  border: 2px solid #222222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.switch:hover {
+  background-color: #dbfe2c;
+}
+
+.flag {
+  height: 40px;
+  width: auto;
+}
+
+.conv-from {
+  font-size: 20px;
+  color: #4b4b4b;
+}
+.error{
+  font-size: 20px;
+  color: #E3170A;
+}
+.conv-to {
+  font-size: 36px;
+  color: #222222;
+  margin-bottom: 2rem;
+}
+
+.date {
+  padding: 6px 36px;
+  max-width: 200px;
+  background-color: #c7ef00;
+  border-radius: 24px;
+  color: #222222;
+  border: 1px solid #222222;
+  font-size: 16px;
+  text-align: center;
 }
