@@ -15,7 +15,7 @@ BuxRate is a currency exchange rate website that allows users to see each day's 
 
 ## 🖼️ Screenshot of the project
 
-![Project Screenshot](/BuxRate%20Screenshot.png)
+![Project Screenshot](/public/BuxRate%20Screenshot.png)
 
 ## 🎉 Features
 
@@ -42,4 +42,4 @@ BuxRate is a currency exchange rate website that allows users to see each day's 
 
 ## 📝 License
 
-This project is licensed under the MIT [LICENSE](LICENSE).
+This project is licensed under the [MIT](LICENSE) License.
